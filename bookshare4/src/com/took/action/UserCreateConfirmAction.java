@@ -45,13 +45,14 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
 		if(userNameErrorMessageList.size()==0
 		&& userPasswordErrorMessageList.size()==0
 		&& emailErrorMessageList.size()==0) {
-			result = SUCCESS;
+			result = ERROR;
+
 		}else {
 			session.put("userNameErrorMessageList", userNameErrorMessageList);
 			session.put("userPasswordErrorMessageList", userPasswordErrorMessageList);
 			session.put("emailErrorMessageList", emailErrorMessageList);
 
-			result = ERROR;
+			result = SUCCESS;
 		}
 		return result;
 	}
