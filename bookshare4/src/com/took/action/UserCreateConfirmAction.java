@@ -31,12 +31,17 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
 		session.put("userName", userName);
 		session.put("userPassword", userPassword);
 		session.put("email", email);
+																/*半角英字、漢字、ひらがな、半角数字、半角記号、カタカナ、全角記号*/
+		userNameErrorMessageList = inputChecker.doCheck("名前", userName, 1, 16, true, true, true, false, false, true, false);
+		userPasswordErrorMessageList = inputChecker.doCheck("パスワード", userPassword, 1, 16, true, false, false, true, false, false, false);
+		userPasswordErrorMessageList = inputChecker.doCheck("パスワード(確認)", userPassword2, 1, 16, true, false, false, true, false, false, false);
+		emailErrorMessageList = inputChecker.doCheck("メールアドレス", email, 1, 16, true, false, false, true, true, false, false);
 
-		userNameErrorMessageList = inputChecker.doCheck("名前", userName, 1, 16, true, true, true, false, false, false, false);
-		userPasswordErrorMessageList = inputChecker.doCheck("パスワード", userPassword, 1, 16, true, true, true, false, false, false, false);
-		emailErrorMessageList = inputChecker.doCheck("メールアドレス", email, 1, 16, false, false, true, false, false, false, false);
-
-
+		userPasswordErrorMessageList = inputChecker.doPasswordCheck(userPassword,userPassword2);
+		/*if(!(userPassword.equals(userPassword2))){
+			result = SUCCESS;
+		}
+		else */
 		if(userNameErrorMessageList.size()==0
 		&& userPasswordErrorMessageList.size()==0
 		&& emailErrorMessageList.size()==0) {

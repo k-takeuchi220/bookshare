@@ -101,8 +101,12 @@
 	<s:password class="form-control txt" id="exampleInputUserPassword"  name="userPassword"  value="" label="パスワード" placeholder="パスワード" />
 </div>
 <div class="form-group">
+	<label for="exampleInputUserPassword2">パスワード(確認)</label>
+	<s:password class="form-control txt" id="exampleInputUserPassword2"  name="userPassword2"  value="" label="パスワード(確認)" placeholder="パスワード(確認)" />
+</div>
+<div class="form-group">
 	<label for="exampleInputEmail">メールアドレス</label>
-	<s:textfield class="form-control txt" id="exampleInputEmail" name="email" value="%{#session.email}" label="メールアドレス" placeholder="メールアドレス"  />
+	<s:textfield type="email" class="form-control txt" id="exampleInputEmail" name="email" value="%{#session.email}" label="メールアドレス" placeholder="メールアドレス"  />
 </div>
 
 </div>

@@ -64,7 +64,7 @@ public class UserInfoDAO {
 		DBConnector dbConnector = new DBConnector();
 		Connection connection = dbConnector.getConnection();
 		UserInfoDTO userInfoDTO = new UserInfoDTO();
-		String sql = "select * from user_info where email=? and userPassword=?";
+		String sql = "select * from user_info where email=? and user_password=?";
 		try {
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setString(1, email);
@@ -146,7 +146,7 @@ public class UserInfoDAO {
 		DBConnector dbConnector = new DBConnector();
 		Connection connection = dbConnector.getConnection();
 		int result=0;
-		String sql = "update user_info set logined=1 where email=? and userPassword=?";
+		String sql = "update user_info set logined=1 where email=? and user_password=?";
 		try {
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setString(1, email);
