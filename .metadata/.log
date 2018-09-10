@@ -695,3 +695,66 @@ org.eclipse.jface.resource.DeviceResourceException: Unable to create resource UR
 
 !ENTRY mergedoc.encoding 2 0 2018-09-10 15:34:56.938
 !MESSAGE リソース '/bookshare4/WebContent/css/main.css' が存在しません。
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-10 16:58:04.758
+!MESSAGE Failed to refresh projects from index changes
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: ローカルのファイル・システムでリソースをリフレッシュ中にエラーが発生しました。
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:977)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:960)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1594)
+	at org.eclipse.egit.ui.Activator$ResourceRefreshJob$1.run(Activator.java:519)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.egit.ui.Activator$ResourceRefreshJob.run(Activator.java:504)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Contains: 'RemoteSystemsTempFiles' のプロジェクト記述ファイル (.project) がありません。 このファイルには、プロジェクトに関する重要な情報が含まれています。 このファイルが復元されるまで、プロジェクトは正しく機能しません。
+!SUBENTRY 1 org.eclipse.core.resources 4 271 2018-09-10 16:58:04.761
+!MESSAGE ローカルのファイル・システムでリソースをリフレッシュ中にエラーが発生しました。
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2018-09-10 16:58:04.761
+!MESSAGE 'RemoteSystemsTempFiles' のプロジェクト記述ファイル (.project) がありません。 このファイルには、プロジェクトに関する重要な情報が含まれています。 このファイルが復元されるまで、プロジェクトは正しく機能しません。
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-10 16:58:04.848
+!MESSAGE Failed to refresh projects from index changes
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: ローカルのファイル・システムでリソースをリフレッシュ中にエラーが発生しました。
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:977)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:960)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1594)
+	at org.eclipse.egit.ui.Activator$ResourceRefreshJob$1.run(Activator.java:519)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.egit.ui.Activator$ResourceRefreshJob.run(Activator.java:504)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Contains: 'サーバー' のプロジェクト記述ファイル (.project) がありません。 このファイルには、プロジェクトに関する重要な情報が含まれています。 このファイルが復元されるまで、プロジェクトは正しく機能しません。
+!SUBENTRY 1 org.eclipse.core.resources 4 271 2018-09-10 16:58:04.848
+!MESSAGE ローカルのファイル・システムでリソースをリフレッシュ中にエラーが発生しました。
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2018-09-10 16:58:04.849
+!MESSAGE 'サーバー' のプロジェクト記述ファイル (.project) がありません。 このファイルには、プロジェクトに関する重要な情報が含まれています。 このファイルが復元されるまで、プロジェクトは正しく機能しません。
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-10 16:58:04.912
+!MESSAGE Failed to refresh projects from index changes
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: ローカルのファイル・システムでリソースをリフレッシュ中にエラーが発生しました。
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:977)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:960)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1594)
+	at org.eclipse.egit.ui.Activator$ResourceRefreshJob$1.run(Activator.java:519)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.egit.ui.Activator$ResourceRefreshJob.run(Activator.java:504)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Contains: 'bookshare4' のプロジェクト記述ファイル (.project) がありません。 このファイルには、プロジェクトに関する重要な情報が含まれています。 このファイルが復元されるまで、プロジェクトは正しく機能しません。
+!SUBENTRY 1 org.eclipse.core.resources 4 271 2018-09-10 16:58:04.912
+!MESSAGE ローカルのファイル・システムでリソースをリフレッシュ中にエラーが発生しました。
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2018-09-10 16:58:04.912
+!MESSAGE 'bookshare4' のプロジェクト記述ファイル (.project) がありません。 このファイルには、プロジェクトに関する重要な情報が含まれています。 このファイルが復元されるまで、プロジェクトは正しく機能しません。
+
+!ENTRY org.eclipse.core.resources 2 2 2018-09-10 17:03:05.420
+!MESSAGE 保管操作の警告。
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2018-09-10 17:03:05.420
+!MESSAGE 'RemoteSystemsTempFiles' のプロジェクト記述ファイル (.project) がありませんでした。 このファイルには、プロジェクトに関する重要な情報が含まれています。 新しいプロジェクト記述ファイルが作成されましたが、プロジェクトに関する情報の一部が破損している可能性があります。
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2018-09-10 17:03:05.420
+!MESSAGE 'サーバー' のプロジェクト記述ファイル (.project) がありませんでした。 このファイルには、プロジェクトに関する重要な情報が含まれています。 新しいプロジェクト記述ファイルが作成されましたが、プロジェクトに関する情報の一部が破損している可能性があります。
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2018-09-10 17:03:05.420
+!MESSAGE 'bookshare4' のプロジェクト記述ファイル (.project) がありませんでした。 このファイルには、プロジェクトに関する重要な情報が含まれています。 新しいプロジェクト記述ファイルが作成されましたが、プロジェクトに関する情報の一部が破損している可能性があります。
