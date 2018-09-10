@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="/Applications/Eclipse_4.6.3.app/Contents/java/7/Home" version="1.7.0_80">
+<bootpath>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/7/Home/jre/lib/resources.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/7/Home/jre/lib/rt.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/7/Home/jre/lib/sunrsasign.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/7/Home/jre/lib/jsse.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/7/Home/jre/lib/jce.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/7/Home/jre/lib/charsets.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/7/Home/jre/lib/jfr.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/7/Home/jre/classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/7/Home/jre/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/7/Home/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="/Applications/Eclipse_4.6.3.app/Contents/java/6/Home" version="1.6.0_65">
+<bootpath>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/6/Classes/jsfd.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/6/Classes/classes.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/6/Classes/ui.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/6/Classes/laf.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/6/Classes/sunrsasign.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/6/Classes/jsse.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/6/Classes/jce.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/6/Classes/charsets.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/6/Home/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/6/Home/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="/Applications/Eclipse_4.6.3.app/Contents/java/8/Home" version="1.8.0_131">
+<bootpath>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/8/Home/jre/lib/resources.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/8/Home/jre/lib/rt.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/8/Home/jre/lib/sunrsasign.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/8/Home/jre/lib/jsse.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/8/Home/jre/lib/jce.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/8/Home/jre/lib/charsets.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/8/Home/jre/lib/jfr.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/8/Home/jre/classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/8/Home/jre/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/8/Home/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

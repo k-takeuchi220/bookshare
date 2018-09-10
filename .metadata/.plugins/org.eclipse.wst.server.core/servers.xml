@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/ローカル・ホスト の Tomcat8 (Java8)-config" deployDir="wtpwebapps" hostname="localhost" id="ローカル・ホスト の Tomcat8 (Java8)" name="ローカル・ホスト の Tomcat8 (Java8)" runtime-id="Tomcat8 (Java8)" server-type="org.eclipse.jst.server.tomcat.80" server-type-id="org.eclipse.jst.server.tomcat.80" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="5">
+    <list key="modules" value0="bookshare4::org.eclipse.jst.jee.server:bookshare4::jst.web::2.5"/>
+  </server>
+</servers>
