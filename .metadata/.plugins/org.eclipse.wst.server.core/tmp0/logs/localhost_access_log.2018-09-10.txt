@@ -115,3 +115,11 @@
 0:0:0:0:0:0:0:1 - - [10/Sep/2018:16:52:41 +0900] "GET /bookshare2/css/responsive.css HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [10/Sep/2018:16:52:41 +0900] "GET /bookshare2/css/main.css HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [10/Sep/2018:16:52:42 +0900] "GET /bookshare2/img/bg3.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:17:37:07 +0900] "GET /bookshare2/index.jsp HTTP/1.1" 200 7071
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:17:37:07 +0900] "GET /bookshare2/css/main.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:17:37:07 +0900] "GET /bookshare2/css/responsive.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:17:37:08 +0900] "GET /bookshare2/img/bg3.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:17:37:15 +0900] "GET /bookshare2/index.jsp HTTP/1.1" 200 7071
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:17:37:16 +0900] "GET /bookshare2/css/main.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:17:37:16 +0900] "GET /bookshare2/css/responsive.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:17:37:16 +0900] "GET /bookshare2/img/bg3.jpg HTTP/1.1" 304 -
