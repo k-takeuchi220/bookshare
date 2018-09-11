@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="signin.css">
+    <link rel="stylesheet" type="text/css" href="signinComplete.css">
      <link rel="stylesheet" type="text/css" href="responsive.css">
 
     <!-- Font-Awesome -->
@@ -46,49 +46,23 @@
         </nav>
       </header>
       <!-- container-form -->
-      <main>
-        <div id="container-form">
-          <div class="text-center">
-            <h1>無料会員登録</h1> 
-            <p>BookShareの<a href="">利用規約</a>および<a href="">プライバシーポリシー</a>に同意の上、会員登録お願い致します。</p>
-            <!-- <p>会員登録情報を入力してください。<span><a href="">  会員の方はこちら</a></span></p> -->
-          </div>
-          <div class="twitter-box">
-            <a href="" class="btn btn-block btn-social btn-twitter">
-              <i class="fab fa-twitter" id="twitter-icon"></i>
-              Twitterで新規登録
-            </a>
-          </div>
-          <div class="icon-box text-center" id="or">
-            <p>or</p>
-          </div>
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">ユーザー名</label>
-              <span class="badge badge-pill badge-danger">必須</span>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ユーザー名">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Eメールアドレス</label>
-              <span class="badge badge-pill badge-danger">必須</span>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Eメールアドレス">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">パスワード</label>
-              <span class="badge badge-pill badge-danger">必須</span>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="パスワード">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">確認用パスワード</label>
-              <span class="badge badge-pill badge-danger">必須</span>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="確認用パスワード">
-            </div>
-            <div class="form-group">
-              <label for="File">ユーザー画像</label>
-              <input type="file" class="form-control-file" id="File">
-            </div>
-            <button type="submit" class="btn btn-primary submit-btn">登録</button>
-          </form>
+      <main >
+        <div  id="container-complete">
+            <h1 class="text-center">会員登録完了ページ</h1>
+            <h5>
+            Yuta 様
+            <br>
+            会員登録ありがとうございます．
+            </h5>
+            <p>
+              ご登録メールアドレスへご確認のメールをお送りいたしました．<br>
+              メールが届かない場合は，マイページでご登録メールアドレスが正しいかご確認ください．
+            </p>
+            <button type="button" class="btn btn-outline-secondary btn-lg complete-btn">マイページ</button>
+            <p>
+              メールアドレスが受け取り可能なものにもかかわらずご確認メールが届かない場合は，下記お問い合わせ窓口までご連絡ください．
+            </p>
+            <button type="button" class="btn btn-outline-secondary btn-lg complete-btn" id="inquiry-btn">お問い合わせ</button>
         </div>
       </main>
       <!--  footer  -->

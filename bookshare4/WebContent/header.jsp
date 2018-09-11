@@ -10,7 +10,7 @@
 		<header class="sticky-top">
 	        <nav class="navbar navbar-expand-sm">
 	          <div class="container">
-	            <a class="navbar-brand text-white" href="index.jsp">BookShare</a>
+	            <a class="navbar-brand text-white" href="index.html">BookShare</a>
 	            <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
 	              <i class="fas fa-bars" id="menu-icon"></i>
 	            </button>
@@ -23,10 +23,10 @@
 	                  <a class="nav-link text-white" href="">投稿を見る</a>
 	                </li>
 	                <li class="nav-item">
-	                  <a class="nav-link text-white" href="signin.jsp">会員登録</a>
+	                  <a class="nav-link text-white" href="signin.html">会員登録</a>
 	                </li>
 	                <li class="nav-item">
-	                  <a class="nav-link text-white" href="login.jsp">ログイン</a>
+	                  <a class="nav-link text-white" href="login.html">ログイン</a>
 	                </li>
 	              </ul>
 	            </div>

@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="signin.css">
+    <link rel="stylesheet" type="text/css" href="signinConfirm.css">
      <link rel="stylesheet" type="text/css" href="responsive.css">
 
     <!-- Font-Awesome -->
@@ -46,49 +46,43 @@
         </nav>
       </header>
       <!-- container-form -->
-      <main>
-        <div id="container-form">
-          <div class="text-center">
-            <h1>無料会員登録</h1> 
-            <p>BookShareの<a href="">利用規約</a>および<a href="">プライバシーポリシー</a>に同意の上、会員登録お願い致します。</p>
-            <!-- <p>会員登録情報を入力してください。<span><a href="">  会員の方はこちら</a></span></p> -->
-          </div>
-          <div class="twitter-box">
-            <a href="" class="btn btn-block btn-social btn-twitter">
-              <i class="fab fa-twitter" id="twitter-icon"></i>
-              Twitterで新規登録
-            </a>
-          </div>
-          <div class="icon-box text-center" id="or">
-            <p>or</p>
-          </div>
+      <main >
+        <div  id="container-confirm">
           <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">ユーザー名</label>
-              <span class="badge badge-pill badge-danger">必須</span>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ユーザー名">
+            <h1 class="text-center">会員登録確認ページ</h1>
+            <div class="table-responsive">
+              <table class="table table-striped container " >
+              <tbody id="table-confirm">
+                <tr>
+                  <th class="table-confirm-title">ユーザー名：</th>
+                  <th>Yuuta</th>
+                </tr>
+                <tr>
+                  <th class="table-confirm-title">メールアドレス：</th>
+                  <th>napier2.7182818284590@gmail.com</th>
+                </tr>
+                <tr>
+                  <th class="table-confirm-title">パスワード：</th>
+                  <th>java2018</th>
+                </tr>
+              </tbody>
             </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Eメールアドレス</label>
-              <span class="badge badge-pill badge-danger">必須</span>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Eメールアドレス">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">パスワード</label>
-              <span class="badge badge-pill badge-danger">必須</span>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="パスワード">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">確認用パスワード</label>
-              <span class="badge badge-pill badge-danger">必須</span>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="確認用パスワード">
-            </div>
-            <div class="form-group">
-              <label for="File">ユーザー画像</label>
-              <input type="file" class="form-control-file" id="File">
-            </div>
-            <button type="submit" class="btn btn-primary submit-btn">登録</button>
+            
+            </table>
           </form>
+          <p class="text-center mt-4">上記内容で登録を行いますが，よろしいですか．</p>
+
+         
+
+          <div id="wrapper-confirm-btn">
+            <button type="button" class="btn btn-outline-secondary btn-lg confirm-btn" id="qqqq">戻る</button>
+            <br>
+            <button type="button" class="btn btn-primary btn-lg confirm-btn" id="regist-btn">会員登録</button>
+            <br>
+            <button type="button" class="btn btn-outline-secondary" id="btn-mypage">トップページへ</button>
+          </div>
+
+
         </div>
       </main>
       <!--  footer  -->

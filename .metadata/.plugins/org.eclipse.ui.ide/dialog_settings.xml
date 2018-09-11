@@ -2,7 +2,7 @@
 <section name="Workbench">
 	<section name="CleanDialogSettings">
 		<item value="484" key="DIALOG_WIDTH"/>
-		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="true" key="TOGGLE_SELECTED"/>
 		<item value="354" key="DIALOG_HEIGHT"/>
 		<item value="312" key="DIALOG_X_ORIGIN"/>
 		<item value="133" key="DIALOG_Y_ORIGIN"/>
@@ -13,6 +13,8 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
 			<item value="/Users/sugiyamayuuta/Desktop/workspace/takeuchi/bookshare/bookshare4"/>
+			<item value="/Users/sugiyamayuuta/Desktop/workspace/bookshare"/>
+			<item value="/Users/sugiyamayuuta/Desktop/workspace/bookShareTest"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
