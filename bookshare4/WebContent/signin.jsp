@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF8" pageEncoding="UTF-8" %>
 <!doctype html>
 <html lang="ja">
   <head>
@@ -7,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="signin.css">
+    <link rel="stylesheet" type="text/css" href="./css/signin.css">
      <link rel="stylesheet" type="text/css" href="responsive.css">
 
     <!-- Font-Awesome -->
@@ -18,33 +19,8 @@
   </head>
   <body>
     <div id="main-wrapper">
-        <!-- header -->
-      <header class="sticky-top">
-        <nav class="navbar navbar-expand-sm">
-          <div class="container">
-            <a class="navbar-brand text-white" href="index.html">BookShare</a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
-              <i class="fas fa-bars" id="menu-icon"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="menu">
-              <ul class="navbar-nav ml-auto" id="navbarRight">
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="">BookShareとは</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="">投稿を見る</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="signin.html">会員登録</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="login.html">ログイン</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
+      <!-- header -->
+      <jsp:include page="header.jsp" />  
       <!-- container-form -->
       <main>
         <div id="container-form">
@@ -92,13 +68,7 @@
         </div>
       </main>
       <!--  footer  -->
-      <footer>
-        <div class="container text-center">
-          <div class="footer-title">
-            <p>Copyright © 2018 BookShare Inc. All rights reserved.</p>
-          </div>
-        </div>  
-      </footer>
+      <jsp:include page="footer.jsp" />
     </div>
 
     <!-- Optional JavaScript -->
