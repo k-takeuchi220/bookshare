@@ -47,7 +47,7 @@ header {
 /*-------------------- top-wrapper --------------------*/
 
 .jumbotron {
-	background-image: url(img/bg3.jpg);
+	background-image: url(./img/bg3.jpg);
 	background-size: cover;
 	background-position: center 60%;
 	position: relative;

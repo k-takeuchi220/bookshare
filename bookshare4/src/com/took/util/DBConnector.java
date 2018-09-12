@@ -10,7 +10,7 @@ public class DBConnector {
 	private static String url = "jdbc:mysql://localhost/bookshare";
 
 	private static String user= "root";
-	private static String password = "";
+	private static String password = "mysql";
 
 	public Connection getConnection(){
 		Connection con = null;

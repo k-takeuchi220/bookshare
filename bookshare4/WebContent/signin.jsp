@@ -13,6 +13,10 @@
 
     <!-- Font-Awesome -->
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+ <!-- catpcha認証 -->
+<%--     <script src='https://www.google.com/recaptcha/api.js'></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script> --%>
+
 
     <title>BookShare|　会員登録ページ</title>
 
@@ -35,36 +39,72 @@
               Twitterで新規登録
             </a>
           </div>
-          <div class="icon-box text-center" id="or">
-            <p>or</p>
-          </div>
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">ユーザー名</label>
-              <span class="badge badge-pill badge-danger">必須</span>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ユーザー名">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Eメールアドレス</label>
-              <span class="badge badge-pill badge-danger">必須</span>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Eメールアドレス">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">パスワード</label>
-              <span class="badge badge-pill badge-danger">必須</span>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="パスワード">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">確認用パスワード</label>
-              <span class="badge badge-pill badge-danger">必須</span>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="確認用パスワード">
-            </div>
-            <div class="form-group">
-              <label for="File">ユーザー画像</label>
-              <input type="file" class="form-control-file" id="File">
-            </div>
-            <button type="submit" class="btn btn-primary submit-btn">登録</button>
-          </form>
+            <div id="errorMessage">
+      <s:if test="errorMessage !=''">
+			<s:property value="errorMessage" escape="false"/>
+		</s:if>
+		</div>
+		<br>
+
+
+
+
+
+
+<s:form action="UserCreateConfirmAction" method="post">
+
+<div class="vertical-list-table">
+
+<div class="form-group">
+	<label for="exampleInputUserName">名前</label>
+	<s:if test="!#session.userNameErrorMessageList.isEmpty()">
+	<div class="error">
+	<div class="error-message">
+		<s:iterator value="#session.userNameErrorMessageList"><s:property /><br></s:iterator>
+	</div>
+	</div>
+</s:if>
+	<s:textfield class="form-control txt" id="exampleInputUserName" name="userName" value="%{#session.userName}" label="名前" placeholder="名前" >
+	</s:textfield>
+</div>
+
+<div class="form-group">
+	<label for="exampleInputUserPassword">パスワード</label>
+	<s:if test="!#session.userPasswordErrorMessageList.isEmpty()">
+	<div class="error">
+	<div class="error-message">
+	<s:iterator value="#session.userPasswordErrorMessageList"><s:property /><br></s:iterator>
+	</div>
+	</div>
+</s:if>
+	<s:password class="form-control txt" id="exampleInputUserPassword"  name="userPassword"  value="" label="パスワード" placeholder="パスワード" setSecureTextEntry="Yes" oncory="return false" onpaste="retrurn false" oncontextmenu="return false">
+	</s:password>
+
+</div>
+<div class="form-group">
+	<label for="exampleInputEmail">メールアドレス</label>
+	<s:if test="!session.emailErrorMessageList.isEmpty()">
+	<div class="error">
+	<div class="error-message">
+	<s:iterator value="#session.emailErrorMessageList"><s:property /><br></s:iterator>
+	</div>
+	</div>
+</s:if>
+	<s:textfield class="form-control txt" id="exampleInputEmail" name="email" value="%{#session.email}" label="メールアドレス" placeholder="メールアドレス" type="email" >
+	</s:textfield>
+</div>
+
+</div>
+
+<!-- catpcha認証 -->
+<!-- <div class="g-recaptcha" data-callback="clearcall" data-sitekey="6Lcly28UAAAAAP-3AzOjIKLc2ALwUgvdcl20D7UA"></div> -->
+
+<div class="submit_btn_box">
+<div id=".contents-btn-set">
+<s:submit value="登録" class="submit_btn" />
+</div>
+</div>
+</s:form>
         </div>
       </main>
       <!--  footer  -->
