@@ -10,7 +10,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.took.util.InputChecker;
 
 
-public class UserCreateConfirmAction extends ActionSupport implements SessionAware{
+public class SigninConfirmAction extends ActionSupport implements SessionAware{
 
 	private String userName;
 	private String userPassword;

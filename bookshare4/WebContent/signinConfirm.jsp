@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <!doctype html>
 <html lang="ja">
   <head>
@@ -20,47 +21,46 @@
   <body>
     <div id="main-wrapper">
       <!-- header -->
-      <jsp:include page="header.jsp" />  
+      <jsp:include page="header.jsp" />
       <!-- container-form -->
-      <main >
+      <div id="main">
         <div  id="container-confirm">
-          <form>
+          <s:form action="SigninCompleteAction" class="table-responsive">
             <h1 class="text-center">会員登録確認ページ</h1>
-            <div class="table-responsive">
               <table class="table table-striped container " >
               <tbody id="table-confirm">
                 <tr>
                   <th class="table-confirm-title">ユーザー名：</th>
-                  <th>Yuuta</th>
-                </tr>
-                <tr>
-                  <th class="table-confirm-title">メールアドレス：</th>
-                  <th>napier2.7182818284590@gmail.com</th>
+                    <td><s:property value="userName" escape="false"/><s:hidden name="userName"  value="%{userName}"/></td>
                 </tr>
                 <tr>
                   <th class="table-confirm-title">パスワード：</th>
-                  <th>java2018</th>
+                  <td><s:property value="userPassword" escape="false"/><s:hidden name="userPassword"  value="%{userPassword}"/></td>
                 </tr>
+                <tr>
+                  <th class="table-confirm-title"> Eメール ：</th>
+                    <td><s:property value="email" escape="false"/><s:hidden name="email"  value="%{email}"/></td>
+                </tr>
+
               </tbody>
-            </div>
-            
             </table>
-          </form>
+                <div id="wrapper-confirm-btn container">
+            		<s:submit type="button" class="btn btn-outline-secondary btn-lg confirm-btn" id="qqqq" method="back">戻る</s:submit>
+            		<br>
+           			<s:submit type="button" class="btn btn-primary btn-lg confirm-btn" id="regist-btn" >会員登録</s:submit>
+           			<br>
+           			<s:submit type="button" class="btn btn-outline-secondary" id="btn-mypage" method="home">トップページへ</s:submit>
+         		</div>
+          </s:form>
           <p class="text-center mt-4">上記内容で登録を行いますが，よろしいですか．</p>
 
-         
 
-          <div id="wrapper-confirm-btn">
-            <button type="button" class="btn btn-outline-secondary btn-lg confirm-btn" id="qqqq">戻る</button>
-            <br>
-            <button type="button" class="btn btn-primary btn-lg confirm-btn" id="regist-btn">会員登録</button>
-            <br>
-            <button type="button" class="btn btn-outline-secondary" id="btn-mypage">トップページへ</button>
-          </div>
+
+
 
 
         </div>
-      </main>
+      </div>
       <!--  footer  -->
       <jsp:include page="footer.jsp" />
     </div>
@@ -70,6 +70,5 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    </div>
   </body>
 </html>

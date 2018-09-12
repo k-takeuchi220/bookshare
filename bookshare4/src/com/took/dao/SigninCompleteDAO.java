@@ -8,7 +8,7 @@ import com.took.util.DBConnector;
 import com.took.util.DateUtil;
 
 
-public class UserCreateCompleteDAO {
+public class SigninCompleteDAO {
 
 	private DateUtil dateUtil = new DateUtil();
 

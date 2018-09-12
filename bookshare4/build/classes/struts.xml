@@ -9,15 +9,21 @@
 	<constant name="struts.devMode" value="true" />
 	<package name="com.took.action" extends="struts-default">
 
-	<action name="UserCreateConfirmAction" class="com.took.action.UserCreateConfirmAction" method="execute">
-		<result name="success">userCreateConfirm.jsp</result>
+	<action name="SigninConfirmAction" class="com.took.action.SigninConfirmAction" method="execute">
+		<result name="success">signinConfirm.jsp</result>
 		<result name="error">signin.jsp</result>
 	</action>
-	<action name="UserCreateCompleteAction" class="com.took.action.UserCreateCompleteAction" method="execute">
-		<result name="success">home.jsp</result>
-
+	<action name="SigninCompleteAction" class="com.took.action.SigninCompleteAction" method="execute">
+		<result name="success">index.jsp</result>
+		<result name="back">signin.jsp</result>
+		<result name="home">index.jsp</result>
+		<result name="error">signinConfirm.jsp</result>
 	</action>
 
+<!-- 	<action name="LoginAction" class="com.took.action.LoginAction" method="execute">
+		<result name="success">home.jsp</result>
+		<result name="error">userCreateConfirm.jsp</result>
+	</action> -->
 
 
 </package>

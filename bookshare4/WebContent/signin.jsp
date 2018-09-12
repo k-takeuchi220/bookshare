@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <!doctype html>
 <html lang="ja">
   <head>
@@ -24,12 +25,12 @@
   <body>
     <div id="main-wrapper">
       <!-- header -->
-      <jsp:include page="header.jsp" />  
+      <jsp:include page="header.jsp" />
       <!-- container-form -->
       <main>
         <div id="container-form">
           <div class="text-center">
-            <h1>無料会員登録</h1> 
+            <h1>無料会員登録</h1>
             <p>BookShareの<a href="">利用規約</a>および<a href="">プライバシーポリシー</a>に同意の上、会員登録お願い致します。</p>
             <!-- <p>会員登録情報を入力してください。<span><a href="">  会員の方はこちら</a></span></p> -->
           </div>
@@ -51,7 +52,7 @@
 
 
 
-<s:form action="UserCreateConfirmAction" method="post">
+<s:form action="SigninConfirmAction" method="post">
 
 <div class="vertical-list-table">
 

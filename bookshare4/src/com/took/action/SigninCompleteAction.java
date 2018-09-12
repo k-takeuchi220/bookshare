@@ -7,7 +7,7 @@ import org.apache.struts2.interceptor.SessionAware;
 import com.opensymphony.xwork2.ActionSupport;
 import com.took.dao.UserInfoDAO;
 
-public class UserCreateCompleteAction extends ActionSupport implements SessionAware{
+public class SigninCompleteAction extends ActionSupport implements SessionAware{
 
 	private String userName;
 	private String userPassword;
@@ -22,6 +22,21 @@ public class UserCreateCompleteAction extends ActionSupport implements SessionAw
 		}
 		return result;
 	}
+
+	public String back() {
+		String result = "back";
+		return result;
+	}
+	
+	public String home() {
+		String result = "home";
+		return result;
+
+	}
+
+
+
+
 
 	public String getUserName() {
 		return userName;

@@ -23,10 +23,10 @@
 	                  <a class="nav-link text-white" href="">投稿を見る</a>
 	                </li>
 	                <li class="nav-item">
-	                  <a class="nav-link text-white" href="signin.html">会員登録</a>
+	                  <a class="nav-link text-white" href="signin.jsp">会員登録</a>
 	                </li>
 	                <li class="nav-item">
-	                  <a class="nav-link text-white" href="login.html">ログイン</a>
+	                  <a class="nav-link text-white" href="login.jsp">ログイン</a>
 	                </li>
 	              </ul>
 	            </div>
