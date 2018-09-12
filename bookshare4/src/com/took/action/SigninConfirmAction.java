@@ -19,6 +19,7 @@ public class SigninConfirmAction extends ActionSupport implements SessionAware{
 
 	private List<String> userNameErrorMessageList = new ArrayList<String>();
 	private List<String> userPasswordErrorMessageList = new ArrayList<String>();
+	private List<String> userPasswordErrorMessageList2 = new ArrayList<String>();
 	private List<String> emailErrorMessageList = new ArrayList<String>();
 
 
@@ -34,16 +35,20 @@ public class SigninConfirmAction extends ActionSupport implements SessionAware{
 																	//	最小文字数、最大文字数、半角英語、漢字、ひらがな、半角数字、半角記号、カタカナ、全角記号
 		userNameErrorMessageList = inputChecker.doCheck("名前", userName, 1, 16, true, true, true, false, false, true, false);
 		userPasswordErrorMessageList = inputChecker.doCheck("パスワード", userPassword, 1, 16, true, false, false, true, false, false, false);
+		userPasswordErrorMessageList = inputChecker.doCheck("パスワード", userPassword2, 1, 16, true, false, false, true, false, false, false);
 		emailErrorMessageList = inputChecker.doCheck("メールアドレス", email, 1, 32, true, false, false, true, true, false, false);
 
+		userPasswordErrorMessageList2 = inputChecker.doPasswordCheck(userPassword, userPassword2);
 
 		if(userNameErrorMessageList.size()==0
 		&& userPasswordErrorMessageList.size()==0
+		&& userPasswordErrorMessageList2.size()==0
 		&& emailErrorMessageList.size()==0) {
 			result = SUCCESS;
 		}else {
 			session.put("userNameErrorMessageList", userNameErrorMessageList);
 			session.put("userPasswordErrorMessageList", userPasswordErrorMessageList);
+			session.put("userPasswordErrorMessageList2", userPasswordErrorMessageList2);
 			session.put("emailErrorMessageList", emailErrorMessageList);
 
 			result = ERROR;
@@ -112,6 +117,13 @@ public class SigninConfirmAction extends ActionSupport implements SessionAware{
 
 	public void setUserPasswordErrorMessageList(List<String> userPasswordErrorMessageList) {
 		this.userPasswordErrorMessageList = userPasswordErrorMessageList;
+	}
+	public List<String> getUserPasswordErrorMessageList2() {
+		return userPasswordErrorMessageList2;
+	}
+
+	public void setUserPasswordErrorMessageList2(List<String> userPasswordErrorMessageList2) {
+		this.userPasswordErrorMessageList2 = userPasswordErrorMessageList2;
 	}
 
 

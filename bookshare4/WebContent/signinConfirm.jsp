@@ -25,7 +25,7 @@
       <!-- container-form -->
       <div id="main">
         <div  id="container-confirm">
-          <s:form action="SigninCompleteAction" class="table-responsive">
+          <s:form action="SigninCompleteAction" class="table-responsive" method="post">
             <h1 class="text-center">会員登録確認ページ</h1>
               <table class="table table-striped container " >
               <tbody id="table-confirm">

@@ -27,7 +27,7 @@
       <!-- header -->
       <jsp:include page="header.jsp" />
       <!-- container-form -->
-      <main>
+      <div id="main">
         <div id="container-form">
           <div class="text-center">
             <h1>無料会員登録</h1>
@@ -59,12 +59,12 @@
 <div class="form-group">
 	<label for="exampleInputUserName">名前</label>
 	<s:if test="!#session.userNameErrorMessageList.isEmpty()">
-	<div class="error">
-	<div class="error-message">
+		<div class="error">
+		<div class="error-message">
 		<s:iterator value="#session.userNameErrorMessageList"><s:property /><br></s:iterator>
-	</div>
-	</div>
-</s:if>
+		</div>
+		</div>
+	</s:if>
 	<s:textfield class="form-control txt" id="exampleInputUserName" name="userName" value="%{#session.userName}" label="名前" placeholder="名前" >
 	</s:textfield>
 </div>
@@ -72,25 +72,33 @@
 <div class="form-group">
 	<label for="exampleInputUserPassword">パスワード</label>
 	<s:if test="!#session.userPasswordErrorMessageList.isEmpty()">
-	<div class="error">
-	<div class="error-message">
-	<s:iterator value="#session.userPasswordErrorMessageList"><s:property /><br></s:iterator>
-	</div>
-	</div>
-</s:if>
-	<s:password class="form-control txt" id="exampleInputUserPassword"  name="userPassword"  value="" label="パスワード" placeholder="パスワード" setSecureTextEntry="Yes" oncory="return false" onpaste="retrurn false" oncontextmenu="return false">
-	</s:password>
+		<div class="error">
+		<div class="error-message">
+		<s:iterator value="#session.userPasswordErrorMessageList"><s:property /><br></s:iterator>
+		</div>
+		</div>
+	</s:if>
+	<s:if test="!#session.userPasswordErrorMessageList2.isEmpty()">
+		<div class="error">
+		<div class="error-message">
+		<s:iterator value="#session.userPasswordErrorMessageList2"><s:property /><br></s:iterator>
+		</div>
+		</div>
+	</s:if>
+	<s:password class="form-control txt" id="exampleInputUserPassword"  name="userPassword"  value="" label="パスワード" placeholder="パスワード" setSecureTextEntry="Yes" oncory="return false" onpaste="retrurn false" oncontextmenu="return false" ></s:password>
+
+	<s:password class="form-control txt" id="exampleInputUserPassword2"  name="userPassword2"  value="" label="パスワード(確認)" placeholder="パスワード(確認)" setSecureTextEntry="Yes" oncory="return false" onpaste="retrurn false" oncontextmenu="return false" ></s:password>
 
 </div>
 <div class="form-group">
 	<label for="exampleInputEmail">メールアドレス</label>
 	<s:if test="!session.emailErrorMessageList.isEmpty()">
-	<div class="error">
-	<div class="error-message">
-	<s:iterator value="#session.emailErrorMessageList"><s:property /><br></s:iterator>
-	</div>
-	</div>
-</s:if>
+		<div class="error">
+		<div class="error-message">
+		<s:iterator value="#session.emailErrorMessageList"><s:property /><br></s:iterator>
+		</div>
+		</div>
+	</s:if>
 	<s:textfield class="form-control txt" id="exampleInputEmail" name="email" value="%{#session.email}" label="メールアドレス" placeholder="メールアドレス" type="email" >
 	</s:textfield>
 </div>
@@ -107,7 +115,7 @@
 </div>
 </s:form>
         </div>
-      </main>
+      </div>
       <!--  footer  -->
       <jsp:include page="footer.jsp" />
     </div>
@@ -117,6 +125,5 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    </div>
   </body>
 </html>
