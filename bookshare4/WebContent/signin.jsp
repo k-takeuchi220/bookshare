@@ -31,7 +31,10 @@
         <div id="container-form">
           <div class="text-center">
             <h1>無料会員登録</h1>
-            <p>BookShareの<a href="">利用規約</a>および<a href="">プライバシーポリシー</a>に同意の上、会員登録お願い致します。</p>
+
+             <p>BookShareの<a onclick="window.open('termsOfService.jsp', '', 'width=50%,height=80%,resizable=yes,scrollbars=yes'); return false;">利用規約</a>
+            および<a onclick="window.open('privacyPolicy.jsp', '', 'width=50%,height=80%,resizable=yes,scrollbars=yes'); return false;">プライバシーポリシー</a>に同意の上、会員登録お願い致します。</p>
+
             <!-- <p>会員登録情報を入力してください。<span><a href="">  会員の方はこちら</a></span></p> -->
           </div>
           <div class="twitter-box">
