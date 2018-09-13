@@ -7,6 +7,7 @@ import java.util.Map;
 import org.apache.struts2.interceptor.SessionAware;
 
 import com.opensymphony.xwork2.ActionSupport;
+import com.took.util.EmailDuplication;
 import com.took.util.InputChecker;
 
 
@@ -21,6 +22,7 @@ public class SigninConfirmAction extends ActionSupport implements SessionAware{
 	private List<String> userPasswordErrorMessageList = new ArrayList<String>();
 	private List<String> userPasswordErrorMessageList2 = new ArrayList<String>();
 	private List<String> emailErrorMessageList = new ArrayList<String>();
+	private List<String> emailErrorMessageList2 = new ArrayList<String>();
 
 
 	private Map<String, Object> session;
@@ -36,20 +38,24 @@ public class SigninConfirmAction extends ActionSupport implements SessionAware{
 		userNameErrorMessageList = inputChecker.doCheck("名前", userName, 1, 16, true, true, true, false, false, true, false);
 		userPasswordErrorMessageList = inputChecker.doCheck("パスワード", userPassword, 1, 16, true, false, false, true, false, false, false);
 		userPasswordErrorMessageList = inputChecker.doCheck("パスワード", userPassword2, 1, 16, true, false, false, true, false, false, false);
-		emailErrorMessageList = inputChecker.doCheck("メールアドレス", email, 1, 32, true, false, false, true, true, false, false);
+		emailErrorMessageList = inputChecker.doCheck("メールアドレス", email, 8, 32, true, false, false, true, true, false, false);
 
 		userPasswordErrorMessageList2 = inputChecker.doPasswordCheck(userPassword, userPassword2);
+
+		emailErrorMessageList2 = EmailDuplication.doEmailCheck(email);
 
 		if(userNameErrorMessageList.size()==0
 		&& userPasswordErrorMessageList.size()==0
 		&& userPasswordErrorMessageList2.size()==0
-		&& emailErrorMessageList.size()==0) {
+		&& emailErrorMessageList.size()==0
+		&& emailErrorMessageList2.size()==0){
 			result = SUCCESS;
 		}else {
 			session.put("userNameErrorMessageList", userNameErrorMessageList);
 			session.put("userPasswordErrorMessageList", userPasswordErrorMessageList);
 			session.put("userPasswordErrorMessageList2", userPasswordErrorMessageList2);
 			session.put("emailErrorMessageList", emailErrorMessageList);
+			session.put("emailErrorMessageList", emailErrorMessageList2);
 
 			result = ERROR;
 		}
@@ -124,6 +130,14 @@ public class SigninConfirmAction extends ActionSupport implements SessionAware{
 
 	public void setUserPasswordErrorMessageList2(List<String> userPasswordErrorMessageList2) {
 		this.userPasswordErrorMessageList2 = userPasswordErrorMessageList2;
+	}
+
+	public List<String> getEmailErrorMessageList2() {
+		return emailErrorMessageList2;
+	}
+
+	public void setEmailErrorMessageList2(List<String> emailErrorMessageList2) {
+		this.emailErrorMessageList2 = emailErrorMessageList2;
 	}
 
 

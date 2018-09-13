@@ -99,6 +99,13 @@
 		</div>
 		</div>
 	</s:if>
+	<s:if test="!session.emailErrorMessageList2.isEmpty()">
+		<div class="error">
+		<div class="error-message">
+		<s:iterator value="#session.emailErrorMessageList2"><s:property /><br></s:iterator>
+		</div>
+		</div>
+	</s:if>
 	<s:textfield class="form-control txt" id="exampleInputEmail" name="email" value="%{#session.email}" label="メールアドレス" placeholder="メールアドレス" type="email" >
 	</s:textfield>
 </div>
