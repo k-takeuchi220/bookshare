@@ -10,7 +10,7 @@
 		<header class="sticky-top">
 	        <nav class="navbar navbar-expand-sm">
 	          <div class="container">
-	            <a class="navbar-brand text-white" href="index.html">BookShare</a>
+	            <a class="navbar-brand text-white" href="index.jsp">BookShare</a>
 	            <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
 	              <i class="fas fa-bars" id="menu-icon"></i>
 	            </button>
