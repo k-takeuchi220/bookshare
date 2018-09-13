@@ -94,7 +94,7 @@
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy
                 nibh euismod tincidunt ut laoreet. </h4>
             </div>
-            <button type="button" class="btn btn-outline-dark btn-lg" id="signin-btn"><span id="btn-text">無料会員登録へ</span></button>
+            <button type="button" class="btn btn-outline-dark btn-lg" id="signin-btn" onclick="location.href='signin.jsp'"><span id="btn-text">無料会員登録へ</span></button>
           </div>
         </div>
       </main>
