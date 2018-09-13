@@ -45,11 +45,11 @@
               </tbody>
             </table>
           <div id="wrapper-confirm-btn">
-            <button type="button" class="btn btn-outline-secondary btn-lg confirm-btn" id="qqqq">戻る</button>
+            <s:submit type="button" class="btn btn-outline-secondary btn-lg confirm-btn" id="qqqq" method="back">戻る</s:submit>
             <br>
-            <button type="button" class="btn btn-primary btn-lg confirm-btn" id="regist-btn">会員登録</button>
+            <s:submit type="button" class="btn btn-primary btn-lg confirm-btn" id="regist-btn">会員登録</s:submit>
             <br>
-            <button type="button" class="btn btn-outline-secondary" id="btn-mypage">トップページへ</button>
+            <s:submit type="button" class="btn btn-outline-secondary" id="btn-mypage" method="home">トップページへ</s:submit>
           </div>
           </s:form>
           <p class="text-center mt-4">上記内容で登録を行いますが，よろしいですか．</p>
