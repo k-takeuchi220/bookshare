@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <!doctype html>
 <html lang="ja">
   <head>
@@ -26,7 +27,7 @@
         <div  id="container-complete">
             <h1 class="text-center">会員登録完了ページ</h1>
             <h5>
-            Yuta 様
+            <s:property value="userName" escape="false"/>
             <br>
             会員登録ありがとうございます．
             </h5>

@@ -14,7 +14,7 @@
 		<result name="error">signin.jsp</result>
 	</action>
 	<action name="SigninCompleteAction" class="com.took.action.SigninCompleteAction" method="execute">
-		<result name="success">index.jsp</result>
+		<result name="success">signinComplete.jsp</result>
 		<result name="back">signin.jsp</result>
 		<result name="home">index.jsp</result>
 		<result name="error">signinConfirm.jsp</result>
