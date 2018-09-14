@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <!doctype html>
 <html lang="ja">
   <head>
@@ -39,22 +40,30 @@
           <div class="icon-box text-center" id="or">
             <p>or</p>
           </div>
-          <form>
+          <s:if test="!#session.loginErrorMessageList.isEmpty()">
+			<div class="error">
+			<div class="error-message">
+			<s:iterator value="#session.loginErrorMessageList"><s:property /><br></s:iterator>
+			</div>
+			</div>
+		</s:if>
+          <s:form action="LoginAction">
             <div class="form-group">
               <label for="exampleInputEmail1">Eメールアドレス</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Eメールアドレス">
+              	<s:textfield class="form-control txt" id="exampleInputEmail" name="email" value="%{#session.email}" label="メールアドレス" placeholder="メールアドレス" type="email" >
+				</s:textfield>
               <small class="text-muted">あなたのメールは他の誰とも共有しません。</small>
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">パスワード</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="パスワード">
+              <s:password class="form-control txt" id="exampleInputUserPassword"  name="userPassword"  value="" label="パスワード" placeholder="パスワード" setSecureTextEntry="Yes" oncory="return false" onpaste="retrurn false" oncontextmenu="return false" ></s:password>
             </div>
             <div class="form-group form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">記憶する</label>
             </div>
-            <button type="submit" class="btn btn-primary submit-btn">送信する</button>
-          </form>
+            <s:submit type="submit" class="btn btn-primary submit-btn" value="送信する"></s:submit>
+          </s:form>
         </div>
       </main>
 

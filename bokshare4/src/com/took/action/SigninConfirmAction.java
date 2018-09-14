@@ -55,7 +55,7 @@ public class SigninConfirmAction extends ActionSupport implements SessionAware{
 			session.put("userPasswordErrorMessageList", userPasswordErrorMessageList);
 			session.put("userPasswordErrorMessageList2", userPasswordErrorMessageList2);
 			session.put("emailErrorMessageList", emailErrorMessageList);
-			session.put("emailErrorMessageList", emailErrorMessageList2);
+			session.put("emailErrorMessageList2", emailErrorMessageList2);
 
 			result = ERROR;
 		}

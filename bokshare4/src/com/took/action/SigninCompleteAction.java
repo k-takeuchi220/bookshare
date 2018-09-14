@@ -23,19 +23,6 @@ public class SigninCompleteAction extends ActionSupport implements SessionAware{
 		return result;
 	}
 
-	public String back() {
-		String result = "back";
-		return result;
-	}
-	
-	public String home() {
-		String result = "home";
-		return result;
-
-	}
-
-
-
 
 
 	public String getUserName() {
