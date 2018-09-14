@@ -1,0 +1,101 @@
+
+/*-------------------- 共通CSS --------------------*/
+* {
+	box-siging: border-box;
+}
+
+html body {
+	height: 100%;
+	margin: 0;
+}
+
+/*.container {
+	width: 100%;
+	margin: 0 auto;
+}*/
+
+.container a {
+  text-decoration: none;
+}
+
+#btn-text {
+	font-size: 24px;
+}
+
+body, #main-wrapper {
+	display: flex;
+  	flex-direction: column;
+ 	min-height: 100vh;
+}
+
+
+/*-------------------- header --------------------*/
+
+header {
+	background-color: #212529;
+	opacity: 0.9;
+}
+
+#navbarRight a:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+#menu-icon {
+ 	color: white;
+}
+
+/*-------------------- container-form --------------------*/
+
+#container-form {
+	width: 70%;
+	margin: 0 auto;
+}
+
+#container-form h1 {
+	margin-top: 10px;
+	padding: 10px;
+	font-weight: 700;
+}
+
+#container-form h5 {
+	opacity: 0.5;
+}
+
+.btn {
+	font-family: 'Montserrat';
+	font-weight: 700;
+}
+
+.btn-block {
+ 	display: block;
+ 	width: 100%;
+}
+
+.icon-box {
+	background-color: #e8eaed;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.form-group {
+	margin-bottom: 30px;
+}
+
+.submit-btn {
+	margin-bottom: 40px;
+}
+
+/*-------------------- footer --------------------*/
+
+footer {
+	background-color: #f8f9fa;
+	line-height: 60px;
+	margin-top: auto;
+}
+
+
+
+
+
