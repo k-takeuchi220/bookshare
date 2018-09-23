@@ -31,6 +31,8 @@
 			<!-- header -->
 			<jsp:include page="header.jsp" />
 
+			<h1>ログイン成功しました！</h1>
+
 
 
 			<!--  footer  -->

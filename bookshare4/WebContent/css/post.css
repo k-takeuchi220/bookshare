@@ -87,6 +87,10 @@ header {
 	margin-bottom: 40px;
 }
 
+.table-confirm-title {
+	width: 150px;
+}
+
 /*-------------------- footer --------------------*/
 
 footer {

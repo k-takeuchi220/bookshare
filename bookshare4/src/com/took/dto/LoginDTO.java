@@ -2,16 +2,17 @@ package com.took.dto;
 
 public class LoginDTO {
 
-	private String userPassword;
+	private int id;
 	private String email;
-//	private boolean loginFlg = false;
+	private String userPassword;
+	private boolean loginFlg = false;
 
-	public String getUserPassword() {
-		return userPassword;
+	public int getId() {
+		return id;
 	}
 
-	public void setUserPassword(String userPassword) {
-		this.userPassword = userPassword;
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getEmail() {
@@ -22,12 +23,20 @@ public class LoginDTO {
 		this.email = email;
 	}
 
-//	public boolean getLoginFlg() {
-//		return loginFlg;
-//	}
-//
-//	public void setLoginFlg(boolean loginFlg) {
-//		this.loginFlg = loginFlg;
-//	}
+	public String getUserPassword() {
+		return userPassword;
+	}
+
+	public void setUserPassword(String userPassword) {
+		this.userPassword = userPassword;
+	}
+
+	public boolean getLoginFlg() {
+		return loginFlg;
+	}
+
+	public void setLoginFlg(boolean loginFlg) {
+		this.loginFlg = loginFlg;
+	}
 
 }
