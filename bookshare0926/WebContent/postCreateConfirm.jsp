@@ -118,7 +118,7 @@
 
 
         <div id="container-form">
-          <s:form action="PostCreateCompleteAction">
+          <s:form action="PostCreateCompleteAction" id="Form" method="post">
           	<table class="table table-striped container " >
               <tbody id="table-confirm">
 
@@ -128,7 +128,7 @@
                   <th class="table-confirm-title">本のタイトル:</th>
                   <td>
                   		<p id="BookTitle"></p>
-                  		<s:property value="bookName" escape="false" />
+                  		<s:property value="bookName" escape="false" /><%-- <s:hidden name="bookName" value="bookName"/> --%>
                   </td>
                 </tr>
 
@@ -179,11 +179,12 @@
               </tbody>
             </table>
             <div id="wrapper-confirm-btn">
-            <s:submit type="button" class="btn btn-outline-secondary btn-lg confirm-btn" id="qqqq" method="back">入力画面に戻る</s:submit>
-            <br>
-            <s:submit type="button" class="btn btn-primary btn-lg confirm-btn" id="regist-btn">投稿する</s:submit>
+
           </div>
           </s:form>
+            <button type="button" class="btn btn-outline-secondary btn-lg confirm-btn" id="qqqq" onclick='location.href="postCreate.jsp"'>入力画面に戻る</button>
+            <br>
+            <s:submit type="button" class="btn btn-primary btn-lg confirm-btn" id="regist-btn" form="Form">投稿する</s:submit>
         </div>
 
       </main>

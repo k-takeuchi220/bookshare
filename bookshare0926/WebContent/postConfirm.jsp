@@ -17,8 +17,12 @@
 
     <title>BookShare|　記事投稿確認ページ</title>
 
-
-
+   <!--  form内でのonclickFunctionの定義 -->
+    <script>
+	function goLoginAction() {
+		document.getElementById("form").action="LoginAction";
+	}
+    </script>
 
   </head>
   <body>
@@ -35,28 +39,27 @@
         </div>
 
         <div id="container-form">
-          <s:form method="post" action="PostCompleteAction" id="form">
+          <s:form action="PostCompleteAction" id="Form" method="post">
           	<table class="table table-striped container " >
               <tbody id="table-confirm">
                 <tr>
                   <th class="table-confirm-title">本のタイトル：</th>
                   <td>
-                  	<s:property value="title" escape="false"/><s:hidden name="title"  value="%{#session.title}"/>
+                  	<s:property value="title" escape="false"/><s:hidden name="title"  value="%{title}"/>
                   </td>
                 </tr>
                 <tr>
                   <th class="table-confirm-title">ユーザー名：</th>
 				  <td>
                  <%--  	 <s:property value="userName" escape="false"/><s:hidden name="userName"  value="%{userName}"/> --%>
-					<%-- <s:iterator value="#session.userName"><s:property /><br></s:iterator> --%>
-					<s:property value="#session.userName" escape="false"/><s:hidden name="userName" value="%{#session.userName}"/>
+					<s:iterator value="#session.userName"><s:property /><br></s:iterator>
                   	<%-- <s:property value="" escape="false"/><s:hidden name=""  value="%{}"/> --%>
                   </td>
                 </tr>
                 <tr>
                    <th class="table-confirm-title my-5">本の紹介文</th>
                 <td>
-                  <s:property value="introduction" escape="false"/><s:hidden name="introduction"  value="%{#session.introduction}"/>
+                  <s:property value="introduction" escape="false"/><s:hidden name="introduction"  value="%{introduction}"/>
                 </td>
 
                 <tr>
@@ -73,12 +76,12 @@
           <div id="wrapper-confirm-btn">
             <button type="button" class="btn btn-outline-secondary btn-lg confirm-btn" id="qqqq" onclick='location.href="post.jsp"'>入力画面に戻る</button>
             <br>
-            <s:submit type="button" class="btn btn-primary btn-lg confirm-btn" id="regist-btn" form="form">投稿する</s:submit>
+            <s:submit type="button" class="btn btn-primary btn-lg confirm-btn" id="regist-btn" form="Form">投稿する</s:submit>
           </div>
 
         </div>
 
-      </div>
+      </div>>
 
 		<!--  footer  -->
       	<jsp:include page="footer.jsp" />

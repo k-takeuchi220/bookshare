@@ -73,7 +73,7 @@
 		</div>
 		</div>
 	</s:if>
-	<s:textfield class="form-control txt" id="exampleInputUserName" name="userName" label="名前" placeholder="名前" >
+	<s:textfield class="form-control txt" id="exampleInputUserName" name="userName"  label="名前" placeholder="名前" >
 	</s:textfield>
 </div>
 
@@ -114,7 +114,7 @@
 		</div>
 		</div>
 	</s:if>
-	<s:textfield class="form-control txt" id="exampleInputEmail" name="email"  label="メールアドレス" placeholder="メールアドレス" type="email" >
+	<s:textfield class="form-control txt" id="exampleInputEmail" name="email" label="メールアドレス" placeholder="メールアドレス" type="email" >
 	</s:textfield>
 </div>
 

@@ -10,13 +10,13 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
 @WebServlet("/UploadServlet")
-@MultipartConfig(location="/tmp", maxFileSize=1048576)
+@MultipartConfig(location="../../WebContent/uploadImg", maxFileSize=1048576)
 public class UploadServletAction extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Part part = request.getPart("file");
         String name = this.getFileName(part);
-        part.write(getServletContext().getRealPath("/WEB-INF/uploaded") + "/" + name);
+        part.write(getServletContext().getRealPath("/WebContent/uploadImg") + "/" + name);
         response.sendRedirect("jsp/post.jsp");
     }
 

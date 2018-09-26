@@ -114,21 +114,13 @@
         </div>
 
         <div id="container-form">
-<<<<<<< HEAD
-<%--           <s:form action="PostConfirmAction" method="post">
-            <div class="form-group">
-              <label for="exampleFormControlInput1">本のタイトル</label>
-	<s:textfield class="form-control txt" id="exampleInputTitle" name="title" value="%{#session.title}" label="タイトル" placeholder="タイトル" >
-	</s:textfield> --%>
-=======
-          <s:form action="PostCreateConfirmAction" name="myform">
+          <s:form action="PostCreateConfirmAction" name="myform" method="post">
 
             <!-- ISBNの入力タグ -->
             <div class="form-group">
               <h6 class="isbn">ISBN番号を入力してください:</h6>
               <input type="text" class="form-control" id="isbn" name="isbnCode" placeholder="ISBN番号を入力"><!-- <s:hidden name="isbnCode" value="%{isbnCode}" /> -->
 
->>>>>>> 4606fd9dbf5f0d5f18dcda8b78442bf0e17d1d0a
             </div>
 
             <table class="table table-striped container">
@@ -176,14 +168,8 @@
 
             <div class="form-group my-4">
               <label for="exampleFormControlTextarea1">本の紹介文</label>
-<<<<<<< HEAD
-<%--               	<s:textarea class="form-control txt" id="exampleInputIntroduction" name="introduction" value="%{#session.introduction}" label="紹介文" placeholder="紹介文"  rows="5">
-				</s:textarea>
-			 </div> --%>
-=======
               <textarea name="bookIntroduction" class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="本の紹介文を入力"></textarea>
             </div>
->>>>>>> 4606fd9dbf5f0d5f18dcda8b78442bf0e17d1d0a
 
 			<s:submit value="投稿する" type="button" name="btn" class="btn btn-primary btn-lg my-3 mb-5" />
 

@@ -16,7 +16,6 @@ public class PostConfirmAction extends ActionSupport implements SessionAware{
   	private String title;
   	private String introduction;
   	private String userName;
-//  	private boolean loginFlg;
 
 	private List<String> postErrorMessageList = new ArrayList<String>();
 //	private Map<String, Object> userDetails =  new HashMap<String, Object>();
@@ -30,10 +29,8 @@ public class PostConfirmAction extends ActionSupport implements SessionAware{
   		String loginFlgStr = session.get("loginFlg").toString();
   		boolean loginFlg = Boolean.valueOf(loginFlgStr);
 
-
   		InputCheckerProhibited inputCheckerp = new InputCheckerProhibited();
   		postErrorMessageList = inputCheckerp.doProhibitedCharactersCheck(title,introduction);
-  		String result = ERROR;
 
 		if(loginFlg){
 
@@ -41,6 +38,12 @@ public class PostConfirmAction extends ActionSupport implements SessionAware{
 			session.get("userName");
 			session.put("title", title);
 			session.put("introduction", introduction);
+
+		}
+
+
+  		String result = ERROR;
+
 
 
 
@@ -57,8 +60,6 @@ public class PostConfirmAction extends ActionSupport implements SessionAware{
 
   			result = ERROR;
   		}
-
-		}
   		return result;
   	}
 

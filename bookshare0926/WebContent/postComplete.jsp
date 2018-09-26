@@ -17,7 +17,12 @@
 
     <title>BookShare|　記事投稿完了ページ</title>
 
-
+   <!--  form内でのonclickFunctionの定義 -->
+    <script>
+	function goLoginAction() {
+		document.getElementById("form").action="LoginAction";
+	}
+    </script>
 
   </head>
   <body>

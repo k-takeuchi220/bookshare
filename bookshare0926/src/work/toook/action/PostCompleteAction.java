@@ -19,7 +19,7 @@ public class PostCompleteAction extends ActionSupport implements SessionAware{
 
 
 	public String execute() throws SQLException{
-		String result = ERROR;
+//		String result = ERROR;
 		PostDAO postDAO = new PostDAO();
 		postDAO.postPush(session.get("title").toString(),
 		session.get("introduction").toString(),
@@ -28,7 +28,7 @@ public class PostCompleteAction extends ActionSupport implements SessionAware{
 
 
 
-		 result = SUCCESS;
+		String result = SUCCESS;
 
 		return result;
 	}

@@ -26,7 +26,7 @@
       <!-- container-form -->
       <div id="main">
         <div  id="container-confirm">
-          <s:form class="table-responsive" method="post"  action="SigninCompleteAction" id="form">
+          <s:form class="table-responsive" method="post"  action="SigninCompleteAction" id="Form">
             <h1 class="text-center">会員登録確認ページ</h1>
               <table class="table table-striped container " >
               <tbody id="table-confirm">
@@ -50,7 +50,7 @@
           <div id="wrapper-confirm-btn">
             <button type="button" class="btn btn-outline-secondary btn-lg confirm-btn" id="qqqq" onclick='location.href="signin.jsp"'>戻る</button>
             <br>
-            <s:submit type="button" class="btn btn-primary btn-lg confirm-btn" id="regist-btn" form="form">会員登録</s:submit>
+            <s:submit type="button" class="btn btn-primary btn-lg confirm-btn" id="regist-btn" form="Form">会員登録</s:submit>
             <br>
 			<s:form action="HomeAction">
             <s:submit type="button" class="btn btn-outline-secondary" id="btn-mypage">トップページへ</s:submit>

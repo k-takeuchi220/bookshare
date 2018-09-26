@@ -8,14 +8,17 @@ import org.apache.struts2.interceptor.SessionAware;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class HomeAction  extends ActionSupport implements SessionAware{
-	private Map<String, Object> session;
-
 	private boolean loginFlg;
+	private Map<String, Object> session;
 
 	public String execute() {
 
-//		LoginDTO loginDTO = new LoginDTO();
-//		session.put("loginFlg",loginDTO.getLoginFlg());
+		session.get("loginFlg");
+
+
+
+
+
 
 
 

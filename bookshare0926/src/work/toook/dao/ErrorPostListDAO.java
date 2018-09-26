@@ -10,14 +10,15 @@ import java.util.List;
 
 import work.toook.util.DBConnector;
 
-public class LoginDAO {
+public class ErrorPostListDAO {
 
 
 
-    public static List<String> doLoginCheck(String email,String userPassword){
-//    	LoginDTO loginDTO = new LoginDTO();
 
-        String sql 	= "SELECT * FROM user_info WHERE email = ? and user_password = ? limit 1";
+    public List<String> getPostList(int id){
+//    	PostListSTO PostListSTO = new PostListSTO();
+
+        String sql 	= "SELECT * FROM post WHERE id = ? limit 1";
    		DBConnector dbConnector = new DBConnector();
    		Connection connection = dbConnector.getConnection();
 //		List<String> stringList  = new ArrayList<String>();
@@ -27,23 +28,20 @@ public class LoginDAO {
 
 
             PreparedStatement statement = connection.prepareStatement(sql);
-            statement.setString(1, email);
-            statement.setString(2, userPassword);
+            statement.setInt(1, id);
 
             ResultSet result = statement.executeQuery();
             if (result.next()) {
+
+
+//				PostListSTO.setEmail(result.getString("email"));
+//				PostListSTO.setUserPassword(result.getString("user_password"));
+//				PostListSTO.setUserName(result.getString("user_name"));
+//				PostListSTO.setLoginFlg(true);
             	return errorMessage;
 
-
-//				loginDTO.setEmail(result.getString("email"));
-//				loginDTO.setUserPassword(result.getString("user_password"));
-//				loginDTO.setUserName(result.getString("user_name"));
-//				loginDTO.setLoginFlg(true);
-
             }else{
-//					loginDTO.setLoåginFlg(false);
-
-
+//					PostListSTO.setLoåginFlg(false);
 				}
 
 
@@ -54,7 +52,7 @@ public class LoginDAO {
 
         }
 
-        errorMessage.add("ユーザーID または パスワードが間違っています。");
+        errorMessage.add("投稿がありません");
         return errorMessage;
 
     }

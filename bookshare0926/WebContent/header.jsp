@@ -68,7 +68,7 @@
 	    <div class="notice top"></div>
     	<div class="notice bottom"></div>
 				<header class="sticky-top">
-		<s:form id="form" name="form" action="">
+		<s:form id="form" name="form">
 	        <nav class="navbar navbar-expand-sm">
 	          <div class="container">
 	            <s:submit class="navbar-brand button" onclick="goHomeAction();" value="BookShare" style="color:white;background-color:#212529;border:none;opacity:0.9;"></s:submit>
@@ -87,7 +87,7 @@
 	                <s:hidden name="loginFlg"  value="%{session.loginFlg}" />
 	                </li>
 	                <li class="nav-item">
-	                <s:if test="session.loginFlg">
+	                <s:if test="#session.loginFlg">
 					  <a class="nav-link text-white" href="myPage.jsp">マイページ</a>
 	                </s:if>
 	                <s:else>

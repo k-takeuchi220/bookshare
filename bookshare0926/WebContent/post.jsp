@@ -18,7 +18,11 @@
     <title>BookShare|　記事投稿ページ</title>
 
    <!--  form内でのonclickFunctionの定義 -->
-
+    <script>
+	function goLoginAction() {
+		document.getElementById("form").action="LoginAction";
+	}
+    </script>
 
   </head>
   <body>
@@ -58,14 +62,19 @@
 
             <div class="form-group">
     			<label for="File">本の画像</label>
-    			<input type="file" class="form-control-file" id="File">
+    			<!-- <input type="file" class="form-control-file" id="File"> -->
+    		<s:form method="POST" enctype="multipart/form-data" action="UploadServletAction">
+				<input type="file" name="file"/><br />
+				<input type="submit" value="アップロード" />
+			</s:form>
   			</div>
 
-  			<div>
-  			ISBNを使って投稿する方は<a href="postCreate.jsp">こちら</a>
-			（ <a href="isbn.jsp">ISBNとは? </a>）
 
-  			</div>
+
+
+
+  			ISBNで投稿する方は<a href="postCreate.jsp">こちら</a>
+  			<a href="https://ja.wikipedia.org/wiki/ISBN">（ ISBNとは ）</a>
 
   			<s:submit type="button" class="btn btn-primary btn-lg my-3">投稿する</s:submit>
 

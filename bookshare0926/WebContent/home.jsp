@@ -17,20 +17,20 @@
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <title>BookShare!!</title>
 
-    <script>
+<%--     <script>
 	function goPostCheckAction(){
 		document.getElementById("form").action="PostCheckAction";
 	}
 
 
-	</script>
+	</script> --%>
   </head>
 
   <body>
 
 	<s:form id="form" name="form" action="">
 
-<%-- 	<s:hidden name="loginFlg"  value="%{loginFlg}"/> --%>
+
 
     <div id="main-wrapper">
         <!-- header -->

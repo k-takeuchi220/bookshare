@@ -48,50 +48,103 @@
         		</div>
         		<div class="col-sm-8">
         			<div class="my-3">
-        				<h3>スッキリわかるJava入門 第2版 (スッキリシリーズ)</h3>
-        				<h6>中山 清喬・国本 大悟(インプレイス出版社)</h6>
-        			</div>
-        			<div>
-	        			<p class="mt-4">
-	        				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-	        			</p>
-        			</div>
-        		</div>
-        	</div>
-        	<div class="row border-top border-bottom border-dark mb-5 py-4" id="postContent-wrapper">
-        		<div class="col-sm-4">
-        			<img id="tempImage" class="img-thumbnail" src="./img/java.jpg">
-        		</div>
-        		<div class="col-sm-8">
-        			<div class="my-3">
-        				<h3>スッキリわかるJava入門 第2版 (スッキリシリーズ)</h3>
-        				<h6>中山 清喬・国本 大悟(インプレイス出版社)</h6>
-        			</div>
-        			<div>
-	        			<p class="mt-4">
-	        				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-	        			</p>
-        			</div>
-        		</div>
-        	</div>
-        	<div class="row border-top border-bottom border-dark mb-5 py-4" id="postContent-wrapper">
-        		<div class="col-sm-4">
-        			<img id="tempImage" class="img-thumbnail" src="./img/java.jpg">
-        		</div>
-        		<div class="col-sm-8">
-        			<div class="my-3">
-        				<h3>スッキリわかるJava入門 第2版 (スッキリシリーズ)</h3>
-        				<h6>中山 清喬・国本 大悟(インプレイス出版社)</h6>
-        			</div>
-        			<div>
-	        			<p class="mt-4">
-	        				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-	        			</p>
-        			</div>
-        		</div>
-        	</div>
-        </div>
+        			<s:if test="!postListErrorMessageList1.isEmpty()">
+        				<s:iterator value="#session.postListErrorMessageList1"><s:property /><br></s:iterator>
+        			</s:if>
 
+        			<s:iterator value="#session.title1"><s:property /><br></s:iterator>
+        			</div>
+        			<div>
+	        			<p class="mt-4">
+	        			<s:iterator value="#session.introduction1"><s:property /><br></s:iterator>
+	        			</p>
+        			</div>
+        		</div>
+        	</div>
+
+
+         	<div class="row border-top border-bottom border-dark mb-5 py-4" id="postContent-wrapper">
+        		<div class="col-sm-4">
+        			<img id="tempImage" class="img-thumbnail" src="./img/java.jpg">
+        		</div>
+        		<div class="col-sm-8">
+        			<div class="my-3">
+        			<s:if test="!postListErrorMessageList2.isEmpty()">
+        				<s:iterator value="#session.postListErrorMessageList2"><s:property /><br></s:iterator>
+        			</s:if>
+
+        			<s:iterator value="#session.title2"><s:property /><br></s:iterator>
+        			</div>
+        			<div>
+	        			<p class="mt-4">
+	        			<s:iterator value="#session.introduction2"><s:property /><br></s:iterator>
+	        			</p>
+        			</div>
+        		</div>
+        	</div>
+
+
+        	<div class="row border-top border-bottom border-dark mb-5 py-4" id="postContent-wrapper">
+        		<div class="col-sm-4">
+        			<img id="tempImage" class="img-thumbnail" src="./img/java.jpg">
+        		</div>
+        		<div class="col-sm-8">
+        			<div class="my-3">
+        			<s:if test="!postListErrorMessageList3.isEmpty()">
+        				<s:iterator value="#session.postListErrorMessageList3"><s:property /><br></s:iterator>
+        			</s:if>
+
+        			<s:iterator value="#session.title3"><s:property /><br></s:iterator>
+        			</div>
+        			<div>
+	        			<p class="mt-4">
+	        			<s:iterator value="#session.introduction3"><s:property /><br></s:iterator>
+	        			</p>
+        			</div>
+        		</div>
+        	</div>
+
+
+         	<div class="row border-top border-bottom border-dark mb-5 py-4" id="postContent-wrapper">
+        		<div class="col-sm-4">
+        			<img id="tempImage" class="img-thumbnail" src="./img/java.jpg">
+        		</div>
+        		<div class="col-sm-8">
+        			<div class="my-3">
+        			<s:if test="!postListErrorMessageList4.isEmpty()">
+        				<s:iterator value="#session.postListErrorMessageList4"><s:property /><br></s:iterator>
+        			</s:if>
+
+        			<s:iterator value="#session.title4"><s:property /><br></s:iterator>
+        			</div>
+        			<div>
+	        			<p class="mt-4">
+	        			<s:iterator value="#session.introduction4"><s:property /><br></s:iterator>
+	        			</p>
+        			</div>
+        		</div>
+        	</div>
+
+
+         	<div class="row border-top border-bottom border-dark mb-5 py-4" id="postContent-wrapper">
+        		<div class="col-sm-4">
+        			<img id="tempImage" class="img-thumbnail" src="./img/java.jpg">
+        		</div>
+        		<div class="col-sm-8">
+        			<div class="my-3">
+        			<s:if test="!postListErrorMessageList5.isEmpty()">
+        				<s:iterator value="#session.postListErrorMessageList5"><s:property /><br></s:iterator>
+        			</s:if>
+
+        			<s:iterator value="#session.title5"><s:property /><br></s:iterator>
+        			</div>
+        			<div>
+	        			<p class="mt-4">
+	        			<s:iterator value="#session.introduction5"><s:property /><br></s:iterator>
+	        			</p>
+        			</div>
+        		</div>
+        	</div>
 
       </div>
 
