@@ -131,38 +131,38 @@
                   <th class="table-confirm-title">本のタイトル:</th>
                   <td>
                   	<p id="BookTitle"></p>
-                  	<s:hidden name="bookName" value="%{bookName}" />
+                  	<s:hidden name="BookTitle" value= />
 
                   </td>
                 </tr>
-                <!-- 本の著者 -->
+<%--             <!-- 本の著者 -->
                 <tr>
                   <th class="table-confirm-title">著者:</th>
                   <td>
                     <p id="BookAuthor" name="bookAuthor"></p><s:hidden name="bookAuthor" value="%{bookAuthor}"/>
                   </td>
-                </tr>
-                <!-- 本の出版日 -->
+                </tr> --%>
+<!--                 本の出版日
                 <tr>
                   <th class="table-confirm-title">出版日:</th>
                   <td>
                     <p id="PublishedDate" type="text" name="publishedDate"></p>
                   </td>
-                </tr>
+                </tr> -->
                 <!-- 本のサムネイル -->
                 <tr>
                   <th class="table-confirm-title">本の画像:</th>
                   <td>
-                    <p id="BookThumbnail" type="text" name="bookThumbnail"></p>
+                    <p id="BookThumbnail"></p>
                   </td>
                 </tr>
-                <!-- 本の概要 -->
+<!--                 本の概要
                 <tr>
                   <th class="table-confirm-title">本の概要:</th>
                   <td>
                     <p id="BookDescription" type="text" name="bookDescription"></p>
                   </td>
-                </tr>
+                </tr> -->
               </tbody>
             </table>
 

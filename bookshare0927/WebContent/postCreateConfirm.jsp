@@ -128,27 +128,30 @@
                   <th class="table-confirm-title">本のタイトル:</th>
                   <td>
                   		<p id="BookTitle"></p>
-                  		<s:property value="bookName" escape="false" /><%-- <s:hidden name="bookName" value="bookName"/> --%>
+                  		<s:iterator value="#session.bookTitle"><s:property /><br></s:iterator>
+                  		<s:iterator value="session.bookTitle"><s:property /><br></s:iterator>
+
+                  		<s:property value="bookTitle" escape="false" /><%-- <s:hidden name="bookName" value="bookName"/> --%>
                   </td>
                 </tr>
 
-                <!-- 本の著者 -->
+<%--                 <!-- 本の著者 -->
                 <tr>
                   <th class="table-confirm-title">著者:</th>
                   <td>
                   	<p id="BookAuthor"></p>
                   	<s:property value="bookAuthor" escape="false"/>
                   </td>
-                </tr>
+                </tr> --%>
 
-                <!-- 本の出版日 -->
+<!--                 本の出版日
                 <tr>
                   <th class="table-confirm-title my-5">出版日:</th>
                   <td>
                   	<p id="PublishedDate"></p>
 
                   </td>
-                </tr>
+                </tr> -->
 
                 <!-- 本のサムネイル -->
                 <tr>
@@ -159,14 +162,14 @@
                   </td>
                 </tr>
 
-                <!-- 本の概要 -->
+ <%--                <!-- 本の概要 -->
                 <tr>
                   <th class="table-confirm-title">本の概要:</th>
                   <td>
                   	<p id="BookDescription"></p>
 					<s:property value="bookDescription" escape="false"/>
                   </td>
-                </tr>
+                </tr> --%>
 
                 <!-- 本の紹介文 -->
                 <tr>

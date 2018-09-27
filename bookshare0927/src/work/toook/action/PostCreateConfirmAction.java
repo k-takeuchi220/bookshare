@@ -25,6 +25,8 @@ public class PostCreateConfirmAction extends ActionSupport implements SessionAwa
 	public Map<String, Object> session;
 
 	public String execute() {
+		System.out.println(bookTitle);
+		session.put("bookTitle", bookTitle);
 
 		String result = SUCCESS;
 System.out.println(isbnCode);
@@ -130,6 +132,10 @@ System.out.println(isbnCode);
 //	@Override
 	public void setSession(Map<String, Object> session) {
 		this.session = session;
+	}
+
+	public Map<String, Object> getSession() {
+		return session;
 	}
 
 //	public String getErrorMessage() {

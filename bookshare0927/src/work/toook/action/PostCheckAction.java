@@ -131,6 +131,66 @@ public class PostCheckAction extends ActionSupport implements SessionAware{
 
 
 
+	public List<String> getPostListErrorMessageList1() {
+		return postListErrorMessageList1;
+	}
+
+
+
+	public void setPostListErrorMessageList1(List<String> postListErrorMessageList1) {
+		this.postListErrorMessageList1 = postListErrorMessageList1;
+	}
+
+
+
+	public List<String> getPostListErrorMessageList2() {
+		return postListErrorMessageList2;
+	}
+
+
+
+	public void setPostListErrorMessageList2(List<String> postListErrorMessageList2) {
+		this.postListErrorMessageList2 = postListErrorMessageList2;
+	}
+
+
+
+	public List<String> getPostListErrorMessageList3() {
+		return postListErrorMessageList3;
+	}
+
+
+
+	public void setPostListErrorMessageList3(List<String> postListErrorMessageList3) {
+		this.postListErrorMessageList3 = postListErrorMessageList3;
+	}
+
+
+
+	public List<String> getPostListErrorMessageList4() {
+		return postListErrorMessageList4;
+	}
+
+
+
+	public void setPostListErrorMessageList4(List<String> postListErrorMessageList4) {
+		this.postListErrorMessageList4 = postListErrorMessageList4;
+	}
+
+
+
+	public List<String> getPostListErrorMessageList5() {
+		return postListErrorMessageList5;
+	}
+
+
+
+	public void setPostListErrorMessageList5(List<String> postListErrorMessageList5) {
+		this.postListErrorMessageList5 = postListErrorMessageList5;
+	}
+
+
+
 	public Map<String, Object> getSession() {
 		return session;
 	}

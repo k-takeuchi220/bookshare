@@ -63,10 +63,7 @@
             <div class="form-group">
     			<label for="File">本の画像</label>
     			<!-- <input type="file" class="form-control-file" id="File"> -->
-    		<s:form method="POST" enctype="multipart/form-data" action="UploadServletAction">
-				<input type="file" name="file"/><br />
-				<input type="submit" value="アップロード" />
-			</s:form>
+
   			</div>
 
 
@@ -76,7 +73,7 @@
   			ISBNで投稿する方は<a href="postCreate.jsp">こちら</a>
   			<a href="https://ja.wikipedia.org/wiki/ISBN">（ ISBNとは ）</a>
 
-  			<s:submit type="button" class="btn btn-primary btn-lg my-3">投稿する</s:submit>
+  			<s:submit type="button" class="btn btn-primary btn-lg my-3" value="投稿する"></s:submit>
 
           </s:form>
         </div>

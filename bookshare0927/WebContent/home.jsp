@@ -96,13 +96,48 @@
               <h2 id="title" class="my-3">投稿を見る</h2>
                <h4 class="conatainer-text" id="contents-des">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </h4>
-                <h5>最新の投稿</h5>
-                <iframe src="update.jsp" width="100%" height="250px" scrolling="no" marginwidth="0" marginheight="0" frameboder="0" style="border:none;"></iframe>
                 <s:submit type="button" onclick="goPostCheckAction()" class="btn btn-outline-dark btn-lg" id="signin-btn" value="投稿一覧へ"></s:submit>
+                <h5>最新の投稿</h5>
+
+
+            <div class="row border-top border-bottom border-dark mb-5 py-4" id="postContent-wrapper">
+        		<div class="col-sm-4">
+        			<img id="tempImage" class="img-thumbnail" src="./img/java.jpg">
+        		</div>
+        		<div class="col-sm-8">
+        			<div class="my-3">
+
+        			タイトル：<s:iterator value="#session.LatestTitle"><s:property /><br></s:iterator>
+        			</div>
+        			<div>
+	        			<p class="mt-4">
+	        		投稿内容：<s:iterator value="#session.LatestIntroduction"><s:property /><br></s:iterator>
+	        			</p>
+        			</div>
+        			<div>
+	        			<p class="mt-4">
+	        		ユーザー名：<s:iterator value="#session.LatestUserName"><s:property /><br></s:iterator>
+	        			</p>
+        			</div>
+        			<div>
+	        			<p class="mt-4">
+	        		投稿日時<s:iterator value="#session.LatestRegistDate"><s:property /><br></s:iterator>
+	        			</p>
+        			</div>
+
+        		</div>
+        	</div>
+
+
+
+                <!-- <iframe src="postList.jsp" width="100%" height="250px" scrolling="no" marginwidth="0" marginheight="0" frameboder="0" style="border:none;"></iframe> -->
+
             </div>
           </div>
         </div>
         <!--  signin-wrapper  -->
+
+      <s:if test="!#session.loginFlg">
         <div class="signup-wrapper">
           <div class="container text-center">
             <div class="signin-title">
@@ -114,6 +149,22 @@
             <button type="button" class="btn btn-outline-dark btn-lg" id="signin-btn" onclick="location.href='signin.jsp'"><span id="btn-text">無料会員登録へ</span></button>
           </div>
         </div>
+      </s:if>
+
+      <s:else>
+       <div class="signup-wrapper">
+          <div class="container text-center">
+            <div class="signin-title">
+              <h2 id="title" class="mb-4">マイページ</h2>
+              <h4 class="conatainer-text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy
+                nibh euismod tincidunt ut laoreet. </h4>
+            </div>
+            <button type="button" class="btn btn-outline-dark btn-lg" id="signin-btn" onclick="location.href='myPage.jsp'"><span id="btn-text">マイページへ</span></button>
+          </div>
+        </div>
+      </s:else>
+
       </main>
       <!--  footer  -->
       <jsp:include page="footer.jsp" />
