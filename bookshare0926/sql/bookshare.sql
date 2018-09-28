@@ -11,6 +11,7 @@ id int primary key not null auto_increment comment "ID",
 user_name varchar(32)  not null comment "名前",
 user_password varchar(16) not null comment "パスワード",
 email varchar(32) not null comment "メールアドレス",
+self_intro varchar(255) not null comment "自己紹介文",
 
 status tinyint not null default 0 comment "ステータス",
 loginFlg tinyint not null default 0 comment "ログインフラグ",

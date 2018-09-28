@@ -9,23 +9,42 @@
 	<constant name="struts.devMode" value="true" />
 	<package name="work.toook.action" extends="struts-default">
 
-	<action name="HomeAction" class="work.toook.action.HomeAction" method="execute">
-		<result name="success">home.jsp</result>
-	</action>
+		<action name="HomeAction" class="work.toook.action.HomeAction" method="execute">
+			<result name="success">home.jsp</result>
+		</action>
 
-	<action name="PostCheckAction" class="work.toook.action.PostCheckAction" method="execute">
-		<result name="success">postList.jsp</result>
-		<result name="error">signin.jsp</result>
-	</action>
+		<action name="PostCheckAction" class="work.toook.action.PostCheckAction" method="execute">
+			<result name="success">postList.jsp</result>
+			<result name="error">signin.jsp</result>
+		</action>
 
-	<action name="LogoutAction" class="work.toook.action.LogoutAction" method="execute">
-		<result name="success">home.jsp</result>
-	</action>
+		<action name="LogoutAction" class="work.toook.action.LogoutAction" method="execute">
+			<result name="success">home.jsp</result>
+		</action>
 
-	<action name="LoginPageAction" class="work.toook.action.LoginPageAction" method="execute">
-		<result name="success">login.jsp</result>
-	</action>
+		<action name="LoginPageAction" class="work.toook.action.LoginPageAction" method="execute">
+			<result name="success">login.jsp</result>
+		</action>
 
+<!-- ユーザー情報の編集 -->
+		<!-- EditMyPageAction -->
+		<action name="EditMyPageAction" class="work.toook.action.EditMyPageAction" method="execute">
+			<result name="success">editAccount.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+		<!-- EditMyPageConfirmAction -->
+		<action name="EditMyPageConfirmAction" class="work.toook.action.EditMyPageConfirmAction" method="execute">
+			<result name="success">editAccountConfirm.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+<!-- ユーザーアカウントの削除 -->
+		<!-- DeleteMyAccountAction -->
+		<action name="DeleteMyAccountAction" class="work.toook.action.DeleteMyAccountAction" method="execute">
+			<result name="success">deleteAccount.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
 
 
 

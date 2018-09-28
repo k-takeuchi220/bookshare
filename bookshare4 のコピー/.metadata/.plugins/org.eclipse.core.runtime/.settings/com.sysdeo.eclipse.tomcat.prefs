@@ -1,0 +1,7 @@
+tomcatDir=/Applications/Eclipse_4.6.3.app/Contents/tomcat/8
+eclipse.preferences.version=1
+fixTomcatHomeBug=fixed
+contextsDir=/Applications/Eclipse_4.6.3.app/Contents/tomcat/8/conf/Catalina/localhost
+tomcatVersion=tomcatV8
+computeSourcePath=true
+tomcatConfigFile=/Applications/Eclipse_4.6.3.app/Contents/tomcat/8/conf/server.xml

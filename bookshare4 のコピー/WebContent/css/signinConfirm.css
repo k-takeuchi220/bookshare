@@ -1,0 +1,91 @@
+/*-------------------- 共通CSS --------------------*/
+
+* {
+	box-siging: border-box;
+}
+
+html body {
+	height: 100%;
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+#btn-text {
+	font-size: 24px;
+}
+
+body, #main-wrapper {
+	display: flex;
+  	flex-direction: column;
+ 	min-height: 100vh;
+}
+
+
+/*-------------------- header --------------------*/
+
+header {
+	background-color: #212529;
+	opacity: 0.9;
+}
+
+#navbarRight a:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+#menu-icon {
+ 	color: white;
+}
+
+/*-------------------- container-confirm --------------------*/
+
+#container-confirm {
+	margin: 30px;
+	padding: 10px; 
+}
+
+#container-confirm h1 {
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+#signinConfirm-btn {
+	text-align: center;
+	margin: 10px;
+}
+
+#btn-left {
+	margin-right: 20px;
+}
+
+#btn-mypage {
+	margin: 30px;
+}
+
+#wrapper-confirm-btn {
+	text-align: center;
+	margin: 30px;
+}
+
+.confirm-btn {
+		text-align: center;
+		width: 50%;
+		margin-bottom: 20px;
+}
+
+
+
+/*-------------------- footer --------------------*/
+
+footer {
+	background-color: #f8f9fa;
+	line-height: 60px;
+	margin-top: auto;
+}
