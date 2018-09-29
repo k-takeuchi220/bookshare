@@ -1,0 +1,5 @@
+contextsDir=/Applications/Eclipse_4.6.3.app/Contents/tomcat/8/conf/Catalina/localhost
+eclipse.preferences.version=1
+tomcatConfigFile=/Applications/Eclipse_4.6.3.app/Contents/tomcat/8/conf/server.xml
+tomcatDir=/Applications/Eclipse_4.6.3.app/Contents/tomcat/8
+tomcatVersion=tomcatV8
