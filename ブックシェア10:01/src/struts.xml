@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.ui.theme" value="simple" />
+	<!-- 開発者モード(デバッグしたい時にはコメント外してください。ユーザーのエラーページが無効にできます) -->
+	<!-- <constant name="struts.devMode" value="true" /> -->
+	<constant name="struts.devMode" value="true" />
+	<package name="work.toook.action" extends="struts-default">
+
+	<action name="HomeAction" class="work.toook.action.HomeAction" method="execute">
+		<result name="success">home.jsp</result>
+	</action>
+
+	<action name="PostListAction" class="work.toook.action.PostListAction" method="execute">
+		<result name="success">postList.jsp</result>
+		<result name="error">signin.jsp</result>
+	</action>
+
+	<action name="PostListAction2" class="work.toook.action.PostListAction2" method="execute">
+		<result name="success">postList.jsp</result>
+		<result name="error">signin.jsp</result>
+	</action>
+
+	<action name="PostListAction3" class="work.toook.action.PostListAction3" method="execute">
+		<result name="success">postList.jsp</result>
+		<result name="error">signin.jsp</result>
+	</action>
+
+	<action name="LogoutAction" class="work.toook.action.LogoutAction" method="execute">
+		<result name="success">home.jsp</result>
+	</action>
+
+	<action name="LoginPageAction" class="work.toook.action.LoginPageAction" method="execute">
+		<result name="success">login.jsp</result>
+	</action>
+
+
+
+
+
+
+
+	<action name="SigninConfirmAction" class="work.toook.action.SigninConfirmAction" method="execute">
+		<result name="success">signinConfirm.jsp</result>
+		<result name="error">signin.jsp</result>
+	</action>
+
+	<action name="SigninCompleteAction" class="work.toook.action.SigninCompleteAction" method="execute">
+		<result name="success">signinComplete.jsp</result>
+		<result name="error">signinConfirm.jsp</result>
+	</action>
+
+	<action name="LoginAction" class="work.toook.action.LoginAction" method="execute">
+		<result name="success">home.jsp</result>
+		<result name="error">login.jsp</result>
+	</action>
+
+	<action name="PostConfirmAction" class="work.toook.action.PostConfirmAction" method="execute">
+		<result name="success">postConfirm.jsp</result>
+		<result name="error">post.jsp</result>
+	</action>
+
+ 	<action name="PostCompleteAction" class="work.toook.action.PostCompleteAction" method="execute">
+		<result name="success">postComplete.jsp</result>
+		<result name="error">postConfirm.jsp</result>
+	</action>
+
+	<action name="PostCreateConfirmAction" class="work.toook.action.PostCreateConfirmAction" method="execute">
+		<result name="success">postCreateConfirm.jsp</result>
+		<result name="error">postCreate.jsp</result>
+	</action>
+
+	<action name="DeleteAccountAction" class="work.toook.action.DeleteAccountAction" method="execute">
+		<result name="success">deleteAccountComplete.jsp</result>
+		<result name="error">deleteAccountError.jsp</result>
+	</action>
+
+	<action name="UserPostListAction" class="work.toook.action.UserPostListAction" method="execute">
+		<result name="success">deletePost.jsp</result>
+		<result name="error">signin.jsp</result>
+	</action>
+
+	<action name="DeletePostAction" class="work.toook.action.DeletePostAction" method="execute">
+		<result name="success">reDeletePost.jsp</result>
+		<result name="error">deletePostError.jsp</result>
+	</action>
+
+
+<!-- 	<action name="PostCreateCompleteAction" class="work.toook.action.PostCreateCompleteAction" method="execute">
+		<result name="success">postCreateComplete.jsp</result>
+		<result name="error">postCreateConfirm.jsp</result>
+	</action> -->
+
+
+
+
+
+
+</package>
+</struts>
